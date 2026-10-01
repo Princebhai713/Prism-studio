@@ -1,0 +1,690 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Projects | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            color: #111;
+            padding: 60px 20px;
+        }
+        
+        .portfolio {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
+        /* HEADER */
+        
+        .portfolio-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .portfolio-header span {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-header h1 {
+            font-size: 48px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .portfolio-header p {
+            max-width: 650px;
+            margin: auto;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        /* CATEGORY */
+        
+        .category-section {
+            margin-bottom: 70px;
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 28px;
+        }
+        
+        .category-header h2 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .category-header span {
+            font-size: 14px;
+            color: #777;
+        }
+        /* GRID */
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        /* CARD */
+        
+        .project-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        }
+        /* IMAGE */
+        
+        .project-image {
+            width: 100%;
+            height: 270px;
+            background: #e9e9e9;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.04);
+        }
+        /* CONTENT */
+        
+        .project-content {
+            padding: 23px;
+        }
+        
+        .project-content h3 {
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+        
+        .project-category {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        /* BUTTON */
+        
+        .visit-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            background: #111;
+            color: #fff;
+            padding: 11px 17px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+        
+        .visit-btn:hover {
+            background: #333;
+            transform: translateX(2px);
+        }
+        /* FOOTER */
+        
+        .portfolio-footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 35px;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 14px;
+        }
+        /* TABLET */
+        
+        @media (max-width: 1050px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .portfolio-header h1 {
+                font-size: 42px;
+            }
+        }
+        /* MOBILE */
+        
+        @media (max-width: 650px) {
+            body {
+                padding: 40px 15px;
+            }
+            .portfolio-header {
+                margin-bottom: 45px;
+            }
+            .portfolio-header h1 {
+                font-size: 34px;
+            }
+            .portfolio-header p {
+                font-size: 14px;
+            }
+            .category-section {
+                margin-bottom: 50px;
+            }
+            .category-header {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 6px;
+            }
+            .category-header h2 {
+                font-size: 24px;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .project-image {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <main class="portfolio">
+
+
+        <!-- ============================
+         HEADER
+    ============================= -->
+
+        <header class="portfolio-header">
+
+            <span>Our Portfolio</span>
+
+            <h1>
+                Selected Projects
+            </h1>
+
+            <p>
+                A collection of websites and digital experiences designed and developed for different industries and business needs.
+            </p>
+
+        </header>
+
+
+
+        <!-- ==================================================
+         ARCHITECTURE & INTERIOR
+    =================================================== -->
+
+        <section class="category-section">
+
+            <div class="category-header">
+
+                <h2>
+                    Architecture &amp; Interior
+                </h2>
+
+                <span>
+          5 Projects
+        </span>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================
+             01 — AURELIA STUDIO
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://aurelia-luxury.pb6620113.workers.dev/" alt="Aurélia Studio website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Aurélia Studio
+                        </h3>
+
+                        <div class="project-category">
+                            Editorial Minimalist Luxury
+                        </div>
+
+                        <a href="https://aurelia-luxury.pb6620113.workers.dev/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             02 — AURA JAPANDI
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://aura-japandi.pb6620113.workers.dev/" alt="AURA Japandi Interiors website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            AURA Japandi Interiors
+                        </h3>
+
+                        <div class="project-category">
+                            Organic Modern
+                        </div>
+
+                        <a href="https://aura-japandi.pb6620113.workers.dev/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             03 — AURA ARCHITECTS
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://aura-dark.pb6620113.workers.dev/" alt="AURA Architects website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            AURA Architects
+                        </h3>
+
+                        <div class="project-category">
+                            Bold Dark Mode &amp; Architectural
+                        </div>
+
+                        <a href="https://aura-dark.pb6620113.workers.dev/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             04 — MODERN ABODE
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://modern-abode.pb6620113.workers.dev/" alt="Modern Abode website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Modern Abode
+                        </h3>
+
+                        <div class="project-category">
+                            Contemporary + Live Cost Estimator
+                        </div>
+
+                        <a href="https://modern-abode.pb6620113.workers.dev/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             05 — HERITAGE & CO.
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://heritage-co.pb6620113.workers.dev/" alt="Heritage & Co. website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Heritage &amp; Co.
+                        </h3>
+
+                        <div class="project-category">
+                            Classic Royal &amp; Bespoke Craftsmanship
+                        </div>
+
+                        <a href="https://heritage-co.pb6620113.workers.dev/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+         LIVE CLIENT PROJECTS
+    =================================================== -->
+
+        <section class="category-section">
+
+            <div class="category-header">
+
+                <h2>
+                    Live Client Projects
+                </h2>
+
+                <span>
+          6 Projects
+        </span>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================
+             01 — UMID COMMERCE
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://umid-commerce-showcase.vercel.app/" alt="Umid Commerce Showcase website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Umid Commerce Showcase
+                        </h3>
+
+                        <div class="project-category">
+                            E-Commerce
+                        </div>
+
+                        <a href="https://umid-commerce-showcase.vercel.app/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             02 — SYGNUS ELECTRIK
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://sygnuselectrik.com/" alt="Sygnus Electrik website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Sygnus Electrik
+                        </h3>
+
+                        <div class="project-category">
+                            Clean Energy
+                        </div>
+
+                        <a href="https://sygnuselectrik.com/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             03 — AVADON UAE
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://avadon.ae/" alt="Avadon UAE website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Avadon UAE
+                        </h3>
+
+                        <div class="project-category">
+                            Corporate &amp; Luxury
+                        </div>
+
+                        <a href="https://avadon.ae/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             04 — JANAYUSH
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://janayushhealthservices.com/" alt="Janayush Health Services website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Janayush Health Services
+                        </h3>
+
+                        <div class="project-category">
+                            Healthcare
+                        </div>
+
+                        <a href="https://janayushhealthservices.com/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             05 — APEX INSTITUTE
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://apex-institute.vercel.app/" alt="Apex Institute website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Apex Institute
+                        </h3>
+
+                        <div class="project-category">
+                            Education
+                        </div>
+
+                        <a href="https://apex-institute.vercel.app/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================
+             06 — EDVIBE
+        ================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="https://image.thum.io/get/width/1200/crop/800/https://edvibe.vercel.app/" alt="Edvibe website preview" loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Edvibe
+                        </h3>
+
+                        <div class="project-category">
+                            Education
+                        </div>
+
+                        <a href="https://edvibe.vercel.app/" target="_blank" rel="noopener noreferrer" class="visit-btn">
+              View Website
+              <span>→</span>
+            </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================
+         FOOTER
+    ============================= -->
+
+        <footer class="portfolio-footer">
+
+            <p>
+                © 2026 — Selected Web Projects
+            </p>
+
+        </footer>
+
+
+    </main>
+
+</body>
+
+</html>
+```

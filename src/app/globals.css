@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 12%; /* #1C1C22 */
+    --foreground: 0 0% 100%;
+    --card: 240 10% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 10% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 250 63% 53%; /* #4F46E5 - Indigo 600 (Passes WCAG for white text) */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 190 71% 64%; /* #62CEE2 - Aqua Blue */
+    --secondary-foreground: 240 10% 12%;
+    --muted: 240 10% 20%;
+    --muted-foreground: 240 5% 75%;
+    --accent: 190 71% 64%; /* #62CEE2 */
+    --accent-foreground: 240 10% 12%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 248 100% 70%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.glass-morphism {
+  @apply bg-background/90 border-white/10;
+}
+
+.text-gradient {
+  @apply text-primary font-semibold;
+}
+
+.nav-link-active {
+  @apply text-white border-b-2 border-primary;
+}
+
+.ecommerce-header {
+  @apply bg-secondary text-white;
+}
+
+.ecommerce-subnav {
+  @apply bg-[#232f3e] text-white border-t border-white/10;
+}
+
+.btn-primary {
+  @apply bg-[#ffd814] hover:bg-[#f7ca00] text-black border border-[#fcd200] rounded-md shadow-sm;
+}

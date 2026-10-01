@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-visual",
+      "description": "Abstract digital prism with neon lights representing innovation",
+      "imageUrl": "https://picsum.photos/seed/prism1/800/600",
+      "imageHint": "abstract digital"
+    },
+    {
+      "id": "project-1",
+      "description": "SaaS Dashboard interface with dark theme",
+      "imageUrl": "https://picsum.photos/seed/project1/600/400",
+      "imageHint": "saas dashboard"
+    },
+    {
+      "id": "project-2",
+      "description": "E-commerce mobile app design",
+      "imageUrl": "https://picsum.photos/seed/project2/600/400",
+      "imageHint": "mobile ecommerce"
+    },
+    {
+      "id": "project-3",
+      "description": "AI-powered data visualization platform",
+      "imageUrl": "https://picsum.photos/seed/project3/600/400",
+      "imageHint": "data ai"
+    },
+    {
+      "id": "project-4",
+      "description": "Fintech Mobile Application",
+      "imageUrl": "https://picsum.photos/seed/project4/600/400",
+      "imageHint": "fintech app"
+    },
+    {
+      "id": "project-5",
+      "description": "Healthcare Management System",
+      "imageUrl": "https://picsum.photos/seed/project5/600/400",
+      "imageHint": "healthcare dashboard"
+    },
+    {
+      "id": "project-6",
+      "description": "Real Estate Virtual Tour Platform",
+      "imageUrl": "https://picsum.photos/seed/project6/600/400",
+      "imageHint": "real estate"
+    },
+    {
+      "id": "project-7",
+      "description": "Educational Learning Management System",
+      "imageUrl": "https://picsum.photos/seed/project7/600/400",
+      "imageHint": "learning platform"
+    },
+    {
+      "id": "project-8",
+      "description": "Smart Home IoT Controller",
+      "imageUrl": "https://picsum.photos/seed/project8/600/400",
+      "imageHint": "iot app"
+    },
+    {
+      "id": "project-9",
+      "description": "Legal Tech Document Automation",
+      "imageUrl": "https://picsum.photos/seed/project9/600/400",
+      "imageHint": "legal tech"
+    }
+  ]
+}
