@@ -88,6 +88,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://prismwebstudio.mintx.online',
   },
+  verification: {
+    google: '_rJd6IEVb97Qtr4J2oD69u_9ZbKSTd1D5T6YuzXSw2c',
+  },
 };
 
 const jsonLdLocalBusiness = {
