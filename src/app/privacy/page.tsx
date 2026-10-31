@@ -61,7 +61,7 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
 
-          <div className="space-y-8 animate-in fade-in duration-500">
+          <div id="cookies" className="space-y-8 animate-in fade-in duration-500 scroll-mt-24">
             <h2 className="text-3xl font-bold text-slate-900 border-l-8 border-primary pl-6 py-1">
               4. Cookies & Tracking Technologies
             </h2>

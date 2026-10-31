@@ -23,6 +23,162 @@ export async function uploadFile(fileUri: string) {
 // BLOGS
 const DEFAULT_BLOGS = [
   {
+    id: 99,
+    slug: 'gorakhpur-website-cost-guide',
+    title: 'Gorakhpur me Business Website Banwane me Kitna Kharcha Aata Hai? [Complete 2026 Price Breakdown]',
+    excerpt: 'Detailed price guide for Gorakhpur businesses: Understand the exact costs of domain, hosting, Next.js hand-coding, and AMC without agency markups.',
+    category: 'Gorakhpur Business',
+    image_url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop',
+    published_at: '2026-10-15T10:00:00.000Z',
+    author_name: 'Satyarth Maurya',
+    meta_title: 'Gorakhpur Website Cost Guide (2026) | Complete Price Breakdown',
+    meta_description: 'Looking to build a website in Gorakhpur? Learn realistic 2026 costs for starter sites (₹9,999), business flagships, and eCommerce stores with zero hidden fees.',
+    keywords: ['Website Development Cost Gorakhpur', 'Website Banwane Ka Kharcha Gorakhpur', 'Web Design Price Gorakhpur', 'Affordable Website Gorakhpur'],
+    content: `# Gorakhpur me Business Website Banwane me Kitna Kharcha Aata Hai? [Complete 2026 Price Breakdown]
+
+Gorakhpur me har business owner—chahe wo Golghar me kapde ka showroom chalate hon, Civil Lines me coaching institute, ya Medical Road par clinic—apne business ko online le jana chahte hain. Lekin sabse bada sawal hota hai: *"Website banwane me aakhir kitna kharcha aayega aur sahi price kya honi chahiye?"*
+
+Is comprehensive guide me hum ek-ek kharche ka transparent breakdown de rahe hain taaki koi agency aapko mislead na kar sake.
+
+---
+
+## 1. Website Banwane ke Real Components aur Unka Kharcha
+
+Ek professional website 4 mukhya hisson se milkar banti hai: **Domain Name, Web Hosting, Design & Development, aur Annual Maintenance**.
+
+* **Domain Name (.com ya .in)**: Yeh aapki website ka pata hota hai (jaise yourbusiness.in). Iski official annual cost lagbhag ₹800 se ₹1,200 hoti hai.
+* **High-Speed Cloud Hosting & SSL**: Jahan aapki website ki files store hoti hain. Local Indian fast server ke liye Cloud hosting ₹3,000 se ₹6,000 salana aati hai. Sasti ₹500 wali shared hosting website ko bohot slow kar deti hai.
+* **Engineering & Custom Design**: Yahi sabse important part hai. UI design, mobile responsiveness, fast Next.js coding, SEO tags aur WhatsApp integration ke liye agency ₹10,000 se ₹25,000 charge karti hai.
+
+---
+
+## 2. Sasti ₹4,999 Wali Websites ka Chhupa Hua Sach (Hidden Trap)
+
+Aapko Gorakhpur me bohot se aise posters ya WhatsApp messages milte honge jo ₹3,999 ya ₹4,999 me complete website ka claim karte hain. Inka business model kya hota hai?
+
+1. Pehle wo aapko ek pirated, purana WordPress theme de dete hain jisme virus ya security loopholes hote hain. Website khulne me 6 se 8 second lagati hai, jisse customers turant back kar dete hain.
+2. Ek saal baad, jab renewal ka waqt aata hai, wo hosting ya maintenance ke naam par ₹10,000 se ₹15,000 demand karte hain. Agar aap mana karte hain, to wo aapki website band kar dete hain kyunki code ka access unke paas hota hai.
+3. [Prism Web Studio](/web-development-company-in-gorakhpur) me hum 100% transparent pricing offer karte hain: Full code ownership, direct domain control aur pehle saal ka full cloud hosting bill hamare package me shamil hota hai.
+
+---
+
+## 3. Gorakhpur Market Pricing Tiers: 2026 Realistic Benchmarks
+
+* **Tier 1: Starter Showcase (₹9,999 - ₹14,999)**: Local service providers, clinics, restaurants ke liye 1 se 5 pages ki fast responsive landing page with WhatsApp chat & Google Maps.
+* **Tier 2: Business Flagship (₹19,999 - ₹29,999)**: Coaching institutes, hospitals, construction & real estate firms ke liye 6 se 10 pages, lead capture CRM, dynamic blog, aur full Local SEO optimization.
+* **Tier 3: E-Commerce Store (₹34,999 - ₹59,999)**: Retailers aur wholesalers ke liye online product catalog, UPI/Razorpay payment gateway, automated WhatsApp order receipts, aur inventory tracking.
+
+---
+
+## Conclusion: Sahi Investment se Business Badhayein
+
+Website koi kharcha nahi hai, yeh aapke showroom ka sabse sasta aur sabse tez salesperson hai jo bina soye 24 ghante customer laata hai. Free quotation aur consultation ke liye [Prism Web Studio se aaj hi contact karein](/contact)!`
+  },
+  {
+    id: 100,
+    slug: 'gorakhpur-retail-ecommerce-guide',
+    title: 'Top 7 Reasons Why Retailers in Gorakhpur Need an Online Store in 2026',
+    excerpt: 'Discover why Golghar and Buxipur shop owners are launching independent Next.js eCommerce websites with UPI ordering and same-day delivery.',
+    category: 'Local E-Commerce',
+    image_url: 'https://images.unsplash.com/photo-1556742049-0a67e557224f?q=80&w=800&auto=format&fit=crop',
+    published_at: '2026-10-12T10:00:00.000Z',
+    author_name: 'Satyarth Maurya',
+    meta_title: '7 Reasons Gorakhpur Retailers Need an Online Store (2026 Guide)',
+    meta_description: 'Why Gorakhpur retailers in Golghar & Buxipur are beating Amazon and Flipkart using custom Next.js eCommerce stores with 0% commission & UPI.',
+    keywords: ['eCommerce Website Gorakhpur', 'Online Store Gorakhpur', 'Retail Digital Transformation UP', 'Sell Online Gorakhpur'],
+    content: `# Top 7 Reasons Why Retailers in Gorakhpur Need an Online Store in 2026
+
+Golghar, Buxipur, Bank Road aur Asuran Chowk ke retail vyapari saalon se physically dukan chala rahe hain. Lekin badalte daur me Amazon, Flipkart aur Meesho jaise platforms local dukanon ka market share cheen rahe hain.
+
+Sachai yeh hai ki Gorakhpur ke grahak ab online order karna pasand karte hain—lekin wo local dukanon se vishwas karte hain. Yahan hum 7 main reasons bata rahe hain ki kyun har Gorakhpur retailer ko apni khud ki online e-commerce website banwani chahiye.
+
+---
+
+## 1. Golghar aur Buxipur ke Bahar Apna Grahak Base Badhayein
+
+Ek physical dukan ki limitation hoti hai: sirf wahi grahak khareed sakte hain jo us raste se guzar rahe hain ya parking dhoondh pa rahe hain.
+
+Aapki apni online store hone se poore Gorakhpur (Taramandal, Rustampur, Rapti Nagar, Medical College) ke sath-sath Deoria, Kushinagar, Maharajganj aur Basti ke log bhi aapse seedha order kar sakte hain. Aapka target audience 10,000 logon se badhkar 50 lakh logon tak pahunch jata hai.
+
+---
+
+## 2. Zero Market Commission: 100% Munafa Seedha Aapke Bank Account Me
+
+Jab aap marketplace platforms par bechte hain, to wo listing fee, shipping cut aur har sale par 15% se 30% commission katte hain. Return aane par saara nuksan seller ka hota hai.
+
+Apni custom website par aap seedha PhonePe, Google Pay ya Razorpay gateway se **0% commission** par direct payment apne bank account me receive karte hain.
+
+---
+
+## 3. Local Advantage: Same-Day Delivery jo Big Tech Nahi Kar Sakta
+
+Amazon ya Flipkart ko Gorakhpur me delivery dene me kam se kam 2 se 4 din lagte hain. Lekin aap ek local retailer hain! Agar Medical College Road ka koi grahak subah 11 baje aapki website par kapde ya electronics ka order deta hai, to aap 2 ghante ke andar local delivery boy se uske ghar parcel deliver kara sakte hain. Yeh trust aur speed koi multinational company match nahi kar sakti.
+
+---
+
+## Build Your Online Store with Prism Web Studio
+
+Apne business ko future-proof banayein. [Prism Web Studio](/web-development-company-in-gorakhpur) Gorakhpur ke retailers ke liye customized, lightweight aur high-converting e-commerce web applications design karta hai. [Demo store dekhne ke liye aaj hi contact karein](/contact)!`
+  },
+  {
+    id: 98,
+    slug: 'school-college-hospital-website-design-gorakhpur',
+    title: 'Website Design for Schools, Colleges & Clinics in Gorakhpur [2026 Blueprint]',
+    excerpt: 'Complete digital blueprint for Gorakhpur educational institutes, coaching centers, and healthcare clinics to automate admissions, fee payments, and OPD appointments.',
+    category: 'Gorakhpur Business',
+    image_url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop',
+    published_at: '2026-10-25T10:00:00.000Z',
+    author_name: 'Satyarth Maurya',
+    meta_title: 'School, College & Clinic Website Design Gorakhpur | 2026 Blueprint',
+    meta_description: 'Looking for a website designer for your school, coaching institute, or clinic in Gorakhpur? Discover how online admissions, fee portals & appointment booking double growth.',
+    keywords: ['School Website Designer Gorakhpur', 'Clinic Website Development Gorakhpur', 'Coaching Website Design Gorakhpur', 'Hospital Web Development Gorakhpur'],
+    content: `# Website Design for Schools, Colleges & Clinics in Gorakhpur [2026 Blueprint]
+
+Gorakhpur Purvanchal ka sabse bada educational aur medical hub hai. **Medical College Road se lekar Betiahata, Golghar, aur Civil Lines tak** har saal lakho students aur patients yahan aate hain.
+
+Lekin aaj bhi Gorakhpur ke 80% schools, coaching centers, aur clinics purane manual registers ya slow, outdated websites par chal rahe hain. Is comprehensive guide me hum discuss karenge ki ek modern, automated website aapke institute ya clinic ke operations ko kaise transform kar sakti hai.
+
+---
+
+## 1. Schools & Coaching Institutes: Online Admissions & Digital Fee Collection
+
+Betiahata aur Civil Lines ke coaching institutes aur Gorakhpur ke top private schools ke liye website sirf ek brocure nahi honi chahiye, balki ek **complete automated admission portal** honi chahiye.
+
+### Essential Features Every School Website Needs:
+1. **Online Admission Enquiry & Registration**: Parents form bharte hi unka data direct school CRM aur WhatsApp par receive ho jata hai.
+2. **UPI Fee Payment Integration**: Parents bina school aakar lambi line lagaye PhonePe, Google Pay ya Net Banking se fees jama kar sakte hain, aur automated digital receipt download kar sakte hain.
+3. **Notices & Exam Schedule Portal**: Timetables, syllabus, aur results students aur parents mobile phone par ek second me access kar sakte hain.
+
+---
+
+## 2. Clinics & Hospitals: Double Patient Appointments on Medical Road
+
+Medical College Road aur Mohaddipur ke doctors aur diagnostic centers ke liye ek professional website ka matlab hota hai **OPD booking automation** aur instant patient trust.
+
+### Essential Features Every Healthcare Website Needs:
+* **Doctor Profile & Specialization Showcase**: Patients pehle doctor ke qualifications, experience aur OPD timings check karte hain.
+* **1-Click WhatsApp OPD Appointment Booking**: Patient apna naam, bimari aur preferred time slot select karke seedha reception WhatsApp par booking send kar sakta hai.
+* **Google Maps & Emergency Directions**: Ambulance aur emergency patient phone par click karke exact clinic tak pahunch sakte hain.
+* **Digital Lab Test Reports**: Patients apna mobile number dalkar lab test reports seedha PDF format me download kar sakte hain.
+
+---
+
+## 3. Why Fast Next.js Architecture is Non-Negotiable
+
+Jab koi parent ya patient mobile par aapki website kholta hai, agar wo 5 second me nahi khulti, to wo dusre school ya hospital par chale jaate hain.
+
+[Prism Web Studio](/web-development-company-in-gorakhpur) me hum hand-crafted **Next.js 15 & React web portals** banate hain:
+* **0.4 Second Mobile Load Speed**: Purvanchal ke slow mobile networks par bhi instant display.
+* **100% Secure**: Zero database hacking or ransomware risk.
+* **Dedicated Google Maps & Local SEO**: Gorakhpur me search karne par aapka school ya clinic #1 par show hota hai.
+
+---
+
+## Ready to Upgrade Your School, College, or Clinic?
+
+Partner with Gorakhpur's premier digital studio. [Contact Prism Web Studio today](/contact) for a free live demo and customized quotation tailored to your institution!`
+  },
+  {
     id: 101,
     slug: 'why-custom-nextjs-websites-convert',
     title: 'Why Custom Next.js Websites Convert 3x Better Than WordPress Templates',
@@ -438,7 +594,10 @@ export async function getBlogBySlug(slug: string) {
     const aliasMap: Record<string, string> = {
       'saas-architecture-best-practices': 'saas-architecture-2026',
       'future-of-ai-automation': 'how-ai-chatbots-reduce-support-costs',
-      'why-custom-websites-convert': 'why-custom-nextjs-websites-convert'
+      'future-ai-automation': 'how-ai-chatbots-reduce-support-costs',
+      'why-custom-websites-convert': 'why-custom-nextjs-websites-convert',
+      'custom-vs-templates': 'why-custom-nextjs-websites-convert',
+      'core-web-vitals-seo': 'why-website-speed-impacts-revenue'
     };
 
     const targetSlug = aliasMap[cleanSlug] || cleanSlug;
@@ -455,7 +614,10 @@ export async function getBlogBySlug(slug: string) {
     const aliasMap: Record<string, string> = {
       'saas-architecture-best-practices': 'saas-architecture-2026',
       'future-of-ai-automation': 'how-ai-chatbots-reduce-support-costs',
-      'why-custom-websites-convert': 'why-custom-nextjs-websites-convert'
+      'future-ai-automation': 'how-ai-chatbots-reduce-support-costs',
+      'why-custom-websites-convert': 'why-custom-nextjs-websites-convert',
+      'custom-vs-templates': 'why-custom-nextjs-websites-convert',
+      'core-web-vitals-seo': 'why-website-speed-impacts-revenue'
     };
     const targetSlug = aliasMap[cleanSlug] || cleanSlug;
     return DEFAULT_BLOGS.find(b => b.slug === targetSlug || b.slug === cleanSlug || b.id.toString() === cleanSlug) || null;

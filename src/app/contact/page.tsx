@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { Loader2, ArrowRight } from "lucide-react";
 import { submitContactForm } from "@/features/contact/actions/contact";
 
 function ContactFormInner() {
@@ -286,13 +287,23 @@ function ContactFormInner() {
               </div>
             )}
 
-            {/* Submit Button */}
+            {/* Submit Button with Loading Spinner & Clear Feedback */}
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-md transition disabled:opacity-50"
+              className="w-full min-h-[48px] py-4 px-6 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold text-sm rounded-xl shadow-md shadow-blue-500/20 transition flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {isSubmitting ? "Submitting Request..." : "Submit Request"}
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  <span>Submitting Your Project Request...</span>
+                </>
+              ) : (
+                <>
+                  <span>Submit Project Request</span>
+                  <ArrowRight className="w-4 h-4" />
+                </>
+              )}
             </button>
           </form>
         </div>

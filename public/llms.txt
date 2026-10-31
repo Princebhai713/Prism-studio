@@ -1,0 +1,20 @@
+# Prism Web Studio
+> #1 Web Development Company, Website Designer & Local SEO Agency in Gorakhpur, Uttar Pradesh.
+
+## About Us
+Prism Web Studio is a premier digital engineering and website development agency headquartered in Civil Lines / Golghar, Gorakhpur, Uttar Pradesh (UP 273001). We specialize in custom Next.js 15 web applications, high-converting retail eCommerce platforms with UPI integration, mobile-first UI/UX design, and Google Local 3-Pack SEO acceleration for growing businesses across Purvanchal and Pan-India.
+
+## Core Services
+- **Web Development Company in Gorakhpur**: Custom sub-second Next.js web applications, eliminating slow WordPress plugins, with 100% Core Web Vitals score. URL: https://prismwebstudio.mintx.online/web-development-company-in-gorakhpur
+- **Website Designer in Gorakhpur**: Mobile-first UI/UX, conversion rate optimization (CRO), interactive brand prototypes in Figma. URL: https://prismwebstudio.mintx.online/website-designer-in-gorakhpur
+- **Local SEO Agency in Gorakhpur**: Google Business Profile (GMB) 3-Pack ranking, on-page optimization, local citation building, and Google Maps lead generation. URL: https://prismwebstudio.mintx.online/seo-services-in-gorakhpur
+- **eCommerce & AI Automation**: Fast online storefronts with Razorpay/PhonePe UPI integration, automated WhatsApp order alerts, and 24/7 AI customer support bots.
+
+## Key Agency Details
+- Headquarters: Civil Lines / Golghar Commercial Hub, Gorakhpur, UP 273001, India
+- Regional Engineering Lab: Kushinagar, UP, India
+- Official Phone: +91 86018 25502
+- Official Email: business@mintx.online
+- Lead Architect: Satyarth Maurya
+- Website: https://prismwebstudio.mintx.online
+- Sitemap: https://prismwebstudio.mintx.online/sitemap.xml

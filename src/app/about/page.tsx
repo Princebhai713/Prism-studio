@@ -154,6 +154,33 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Studio Presence & Location */}
+      <section className="py-20 px-6 max-w-7xl mx-auto border-t border-slate-200">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center sm:text-left">
+          <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200 space-y-3">
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">Primary Headquarters</span>
+            <h3 className="text-xl font-bold text-slate-900">Gorakhpur Studio HQ</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Civil Lines / Golghar Commercial Hub, Gorakhpur, Uttar Pradesh 273001, India.
+            </p>
+          </div>
+          <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200 space-y-3">
+            <span className="text-xs font-bold text-purple-600 uppercase tracking-widest">Engineering Lab</span>
+            <h3 className="text-xl font-bold text-slate-900">Purvanchal Tech Lab</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Kushinagar, Uttar Pradesh, India. Advanced prototyping &amp; AI workflow lab.
+            </p>
+          </div>
+          <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200 space-y-3">
+            <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">Client Service Coverage</span>
+            <h3 className="text-xl font-bold text-slate-900">Regional &amp; Pan-India</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              Gorakhpur, Deoria, Basti, Maharajganj, Lucknow, Delhi NCR, and international clients in UAE &amp; US.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 11. Final CTA Section */}
       <section className="py-32 px-6 bg-slate-50 text-slate-900 text-center">
         <div className="max-w-4xl mx-auto space-y-10">

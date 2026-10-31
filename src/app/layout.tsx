@@ -3,6 +3,7 @@ import './globals.css';
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import MobileBottomCtaBar from '@/components/layout/MobileBottomCtaBar';
 import { Toaster } from '@/components/ui/toaster';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -10,36 +11,37 @@ const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
+  adjustFontFallback: true,
+  preload: true,
 });
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-body',
+  variable: '--font-inter',
   display: 'swap',
+  adjustFontFallback: true,
+  preload: true,
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://prismwebstudio.mintx.online'),
   applicationName: 'Prism Web Studio',
   title: {
-    default: 'Best Web Development & SEO Company in Gorakhpur | Prism Web Studio',
+    default: 'Prism Web Studio | Custom Web Development & AI Engineering Agency Gorakhpur',
     template: '%s | Prism Web Studio',
   },
   description:
-    'Prism Web Studio is the #1 web design agency in Gorakhpur. We build fast, high-converting websites, e-commerce stores & AI solutions for local businesses.',
+    'Prism Web Studio is Gorakhpur’s premier digital engineering agency. We engineer ultra-fast Next.js websites, custom web apps, and autonomous AI automation systems for businesses in Gorakhpur and worldwide.',
   keywords: [
+    'Prism Web Studio',
     'Web Development Company in Gorakhpur',
     'Website Designer in Gorakhpur',
     'Best SEO Agency Gorakhpur',
-    'Web Design Services Gorakhpur',
-    'E-commerce Website Developer Gorakhpur',
-    'Best Digital Marketing & SEO Company Gorakhpur',
-    'Next.js Web Developer in Gorakhpur',
+    'Custom Next.js Web Development',
+    'AI Automation Agency Gorakhpur',
     'Software Development Company Gorakhpur Uttar Pradesh',
-    'Prism Web Studio Gorakhpur',
     'Satyarth Maurya',
     'Web Development Kushinagar UP',
-    'Local SEO Agency Gorakhpur',
   ],
   authors: [{ name: 'Satyarth Maurya', url: 'https://prismwebstudio.mintx.online/about' }],
   creator: 'Prism Web Studio',
@@ -54,24 +56,24 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://prismwebstudio.mintx.online',
     siteName: 'Prism Web Studio',
-    title: 'Best Web Development & SEO Company in Gorakhpur | Prism Web Studio',
+    title: 'Prism Web Studio | Custom Web Development & AI Engineering Agency Gorakhpur',
     description:
-      'Prism Web Studio is the #1 web design agency in Gorakhpur. We build fast, high-converting websites, e-commerce stores & AI solutions for local businesses.',
+      'Prism Web Studio is Gorakhpur’s premier digital engineering agency. We engineer ultra-fast Next.js websites, custom web apps, and autonomous AI automation systems.',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://prismwebstudio.mintx.online/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Best Web Development Team in Gorakhpur - Prism Web Studio',
+        alt: 'Prism Web Studio - Digital Engineering & AI Studio in Gorakhpur',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Web Development & SEO Company in Gorakhpur | Prism Web Studio',
+    title: 'Prism Web Studio | Custom Web Development & AI Engineering Agency Gorakhpur',
     description:
-      'Prism Web Studio is the #1 web design agency in Gorakhpur. High-performance Next.js websites, e-commerce, and AI automation for local businesses.',
-    images: ['/og-image.png'],
+      'Prism Web Studio is Gorakhpur’s premier digital engineering agency. We engineer ultra-fast Next.js websites, custom web apps, and autonomous AI automation systems.',
+    images: ['https://prismwebstudio.mintx.online/og-image.png'],
     creator: '@prismwebstudio',
   },
   robots: {
@@ -102,7 +104,7 @@ const jsonLdLocalBusiness = {
   logo: 'https://prismwebstudio.mintx.online/favicon.ico',
   image: 'https://prismwebstudio.mintx.online/og-image.png',
   description:
-    'Prism Web Studio is the #1 web design and SEO agency in Gorakhpur, UP. We specialize in custom high-speed websites, local business SEO, and AI workflow automation.',
+    'Prism Web Studio is Gorakhpur’s premier digital engineering agency. We engineer ultra-fast Next.js web applications, custom software, and autonomous AI automation systems.',
   founder: {
     '@type': 'Person',
     name: 'Satyarth Maurya',
@@ -124,6 +126,17 @@ const jsonLdLocalBusiness = {
   telephone: '+91 86018 25502',
   email: 'business@mintx.online',
   priceRange: '₹₹ - ₹₹₹',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '48',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  sameAs: [
+    'https://twitter.com/prismwebstudio',
+    'https://www.linkedin.com/company/prismwebstudio',
+  ],
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -194,6 +207,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocalBusiness) }}
@@ -201,8 +218,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white text-slate-900 font-sans antialiased flex flex-col justify-between selection:bg-blue-100 selection:text-blue-900">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-16 md:pb-0">{children}</main>
         <Footer />
+        <MobileBottomCtaBar />
         <Toaster />
         <Analytics />
       </body>

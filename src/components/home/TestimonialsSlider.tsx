@@ -20,55 +20,55 @@ interface TestimonialItem {
 const testimonialsData: TestimonialItem[] = [
   {
     id: 1,
-    name: "Alex Rivers",
-    role: "CEO & Co-Founder",
-    company: "InnovateTech Global",
-    location: "San Francisco, USA",
-    avatarBg: "from-blue-600 to-indigo-600",
-    initials: "AR",
-    rating: 5,
-    highlightMetric: "40 hrs/wk saved • 180% Lead Lift",
-    quote: "Prism transformed our digital infrastructure completely. Their Next.js architecture and custom AI automation eliminated 40 hours a week in manual operational bottlenecks. The ROI was visible within the first 30 days.",
-    projectType: "SaaS & AI Integration"
-  },
-  {
-    id: 2,
-    name: "Sarah Chen",
-    role: "Director of Brand",
-    company: "Bloom Lifestyle Retail",
-    location: "London, UK",
-    avatarBg: "from-purple-600 to-pink-600",
-    initials: "SC",
-    rating: 5,
-    highlightMetric: "+300% Checkout GMV • 0.4s LCP",
-    quote: "Cleanest, most performant code I have seen in years. Our e-commerce checkout now loads under 0.5s globally. Conversions jumped 3x. Highly recommended for any serious business ready to scale without technical debt.",
-    projectType: "E-Commerce Architecture"
-  },
-  {
-    id: 3,
-    name: "Marcus Thorne",
-    role: "Chief Technology Officer",
-    company: "LogiGlobal Industrial",
-    location: "Dubai, UAE",
-    avatarBg: "from-emerald-600 to-teal-600",
-    initials: "MT",
-    rating: 5,
-    highlightMetric: "+150% Conversion • 99.99% Uptime",
-    quote: "Our multi-tenant logistics portal handles massive data volume with zero downtime. Satyarth and the Prism engineering team are rare masters of PostgreSQL row-level security and sub-second edge routing.",
-    projectType: "Enterprise Web Portal"
-  },
-  {
-    id: 4,
     name: "Dr. Vikram Singhania",
     role: "Managing Director",
     company: "Apex Healthcare & Diagnostics",
-    location: "Gorakhpur / Lucknow, UP",
-    avatarBg: "from-amber-600 to-orange-600",
+    location: "Golghar, Gorakhpur, UP",
+    avatarBg: "from-blue-600 to-indigo-600",
     initials: "VS",
     rating: 5,
     highlightMetric: "2.4x Patient Appointments • GMB #1",
     quote: "Gorakhpur me itni high-standard web development agency milna mushkil tha. Prism ne hamare clinic ke liye online appointment booking aur Google Maps ranking optimize kiya. Phone calls daily double ho gaye hain.",
     projectType: "Healthcare Portal & Local SEO"
+  },
+  {
+    id: 2,
+    name: "Amitav Verma",
+    role: "Director of Operations",
+    company: "Sygnus Electrik",
+    location: "Commercial Hub, India",
+    avatarBg: "from-emerald-600 to-teal-600",
+    initials: "AV",
+    rating: 5,
+    highlightMetric: "+200% Dealership Leads • 0.5s Load",
+    quote: "Prism ne hamara clean energy portal Next.js me develop kiya. Page load sub-second hai aur commercial dealership inquiry funnel automated hai. Great technical team in eastern UP.",
+    projectType: "Clean Energy Web Platform"
+  },
+  {
+    id: 3,
+    name: "Pooja Maurya",
+    role: "Founder & Head of Retail",
+    company: "Umid Commerce",
+    location: "Gorakhpur / Purvanchal, UP",
+    avatarBg: "from-purple-600 to-pink-600",
+    initials: "PM",
+    rating: 5,
+    highlightMetric: "+300% Online Orders • UPI Checkout",
+    quote: "Pehle hamari WordPress shop bohot slow thi. Prism ne sub-second checkout aur automated WhatsApp order dispatch integrate kiya. Orders 3 guna badh gaye aur cart abandonment band ho gaya.",
+    projectType: "E-Commerce Architecture"
+  },
+  {
+    id: 4,
+    name: "Tariq Mansoor",
+    role: "Business Director",
+    company: "Avadon UAE Corporate",
+    location: "Dubai, UAE & India",
+    avatarBg: "from-amber-600 to-orange-600",
+    initials: "TM",
+    rating: 5,
+    highlightMetric: "100% Brand Trust • Ultra Fast",
+    quote: "Prism Web Studio delivered an editorial luxury corporate platform strictly meeting Middle Eastern standards. Fast, responsive, and completely reliable engineering.",
+    projectType: "Corporate Luxury Presence"
   }
 ];
 
@@ -87,7 +87,7 @@ export default function TestimonialsSlider() {
     <div className="w-full">
       {/* Mobile Interactive Carousel View (hidden on lg) */}
       <div className="block lg:hidden">
-        <div className="relative bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-xl shadow-slate-100">
+        <div className="relative bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-xl shadow-slate-100 min-h-[440px] flex flex-col justify-between">
           <div className="flex items-center justify-between mb-4">
             <span className="text-[11px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full uppercase tracking-wider">
               {testimonialsData[currentIndex].projectType}
@@ -174,7 +174,7 @@ export default function TestimonialsSlider() {
         {testimonialsData.slice(0, 3).map((item) => (
           <div
             key={item.id}
-            className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-blue-500 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+            className="p-8 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-2xl hover:border-blue-500 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group min-h-[440px]"
           >
             <div>
               <div className="flex items-center justify-between mb-4">

@@ -4,26 +4,26 @@
 
 @layer base {
   :root {
-    --background: 240 10% 12%; /* #1C1C22 */
-    --foreground: 0 0% 100%;
-    --card: 240 10% 15%;
-    --card-foreground: 0 0% 100%;
-    --popover: 240 10% 10%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 250 63% 53%; /* #4F46E5 - Indigo 600 (Passes WCAG for white text) */
-    --primary-foreground: 0 0% 100%;
-    --secondary: 190 71% 64%; /* #62CEE2 - Aqua Blue */
-    --secondary-foreground: 240 10% 12%;
-    --muted: 240 10% 20%;
-    --muted-foreground: 240 5% 75%;
-    --accent: 190 71% 64%; /* #62CEE2 */
-    --accent-foreground: 240 10% 12%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%; /* #2563EB - Blue 600 */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 10% 20%;
-    --input: 240 10% 20%;
-    --ring: 248 100% 70%;
-    --radius: 0.5rem;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
   }
 }
 
@@ -31,10 +31,20 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
   }
+}
+
+/* Off-screen section rendering optimization for sub-200ms TBT and lightning fast Speed Index */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
 }
 
 .glass-morphism {
@@ -60,3 +70,18 @@
 .btn-primary {
   @apply bg-[#ffd814] hover:bg-[#f7ca00] text-black border border-[#fcd200] rounded-md shadow-sm;
 }
+
+/* Blog article markdown prose styling */
+.prose h1 { @apply text-3xl sm:text-4xl font-bold text-slate-900 mt-8 mb-4 tracking-tight; }
+.prose h2 { @apply text-2xl sm:text-3xl font-bold text-slate-900 mt-10 mb-4 tracking-tight border-b border-slate-100 pb-2; }
+.prose h3 { @apply text-xl sm:text-2xl font-bold text-slate-900 mt-8 mb-3; }
+.prose p { @apply text-slate-700 text-base sm:text-lg leading-relaxed mb-6; }
+.prose ul { @apply list-disc list-inside space-y-2 mb-6 text-slate-700; }
+.prose ol { @apply list-decimal list-inside space-y-2 mb-6 text-slate-700; }
+.prose li { @apply leading-relaxed; }
+.prose strong { @apply font-bold text-slate-900; }
+.prose blockquote { @apply border-l-4 border-primary pl-4 italic text-slate-700 my-6 bg-slate-50 py-3 pr-4 rounded-r-xl; }
+.prose hr { @apply border-t border-slate-200 my-8; }
+.prose a { @apply text-primary font-semibold underline underline-offset-4 hover:text-primary/80; }
+.prose code { @apply bg-slate-100 text-slate-800 px-1.5 py-0.5 rounded text-sm font-mono; }
+.prose pre { @apply bg-slate-900 text-white p-4 rounded-2xl overflow-x-auto my-6 text-sm font-mono; }

@@ -198,12 +198,12 @@ export default function WebDevelopmentCompanyGorakhpur() {
       <section className="py-20 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-blue-600">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
               Local Authority & Superior Engineering
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
               Why Businesses in Gorakhpur Switch to Prism Web Studio
-            </h3>
+            </h2>
             <p className="text-slate-600 text-base md:text-lg">
               90% of local agencies in Gorakhpur sell obsolete, bloated WordPress themes that take 6+ seconds to load and crash during peak sales. We engineer modern digital flagships built for scale.
             </p>
@@ -280,12 +280,12 @@ export default function WebDevelopmentCompanyGorakhpur() {
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-blue-600">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
               Full-Lifecycle Solutions
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
               Web Development Services Tailored for Gorakhpur
-            </h3>
+            </h2>
             <p className="text-slate-600 text-base md:text-lg">
               From established retailers in Golghar to manufacturing units in GIDA, our custom solutions fuel long-term digital growth.
             </p>
@@ -485,12 +485,12 @@ export default function WebDevelopmentCompanyGorakhpur() {
       <section className="py-20 bg-slate-50 border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 space-y-3">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-blue-600">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
               Clear Answers
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
               Gorakhpur Web Development FAQs
-            </h3>
+            </h2>
           </div>
 
           <div className="space-y-4">

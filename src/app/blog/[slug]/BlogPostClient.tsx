@@ -14,6 +14,7 @@ import {
   Clock,
   Send,
   ArrowRight,
+  ArrowLeft,
   TrendingUp,
   Loader2
 } from 'lucide-react';
@@ -81,10 +82,35 @@ export function BlogPostClient({ post, relatedPosts }: { post: any, relatedPosts
     setIsSubmittingComment(false);
   };
 
-  const htmlContent = marked.parse(post.content || '');
+  const htmlContent = typeof marked.parse === 'function' ? (marked.parse(post.content || '') as string) : (post.content || '');
+
+  const postDate = post.published_at || post.created_at;
+  let formattedDate = 'Recent';
+  if (postDate) {
+    try {
+      formattedDate = format(new Date(postDate), 'MMM d, yyyy');
+    } catch {
+      formattedDate = 'Recent';
+    }
+  }
+
+  const getCommentDate = (dateVal: any) => {
+    try {
+      return format(new Date(dateVal), 'MMM d, yyyy');
+    } catch {
+      return 'Recent';
+    }
+  };
 
   return (
     <article className="pt-36 pb-24 px-6 max-w-4xl mx-auto">
+      <div className="mb-6">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-primary transition group">
+          <ArrowLeft size={14} className="transition-transform group-hover:-translate-x-1" />
+          <span>Back to Insights & Guides</span>
+        </Link>
+      </div>
+
       <header className="space-y-6 mb-10 text-center md:text-left">
         <div className="flex items-center justify-center md:justify-start gap-2 text-primary font-bold tracking-widest uppercase text-xs">
           <TrendingUp size={14} /> Insight: {post.category || 'Technology'}
@@ -104,7 +130,7 @@ export function BlogPostClient({ post, relatedPosts }: { post: any, relatedPosts
           </div>
           <div className="flex items-center gap-1.5">
             <Calendar size={16} className="text-primary" />
-            {format(new Date(post.published_at || post.created_at), 'MMM d, yyyy')}
+            {formattedDate}
           </div>
           <div className="flex items-center gap-1.5">
             <Clock size={16} className="text-slate-600" />
@@ -155,7 +181,7 @@ export function BlogPostClient({ post, relatedPosts }: { post: any, relatedPosts
                 <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 font-bold">{c.author_name[0]}</div>
                 <div>
                   <span className="font-bold text-slate-900 block">{c.author_name}</span>
-                  <span className="text-[10px] text-slate-600 uppercase">{format(new Date(c.created_at), 'MMM d, yyyy')}</span>
+                  <span className="text-[10px] text-slate-600 uppercase">{getCommentDate(c.created_at)}</span>
                 </div>
               </div>
               <p className="text-slate-600">{c.content}</p>
